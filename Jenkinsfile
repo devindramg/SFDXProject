@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout from GitHub') {
             steps {
-                git branch: 'main',
+                git branch: 'master',
                     url: 'https://github.com/your-org/your-repo.git',
                     credentialsId: 'github-creds'
             }
